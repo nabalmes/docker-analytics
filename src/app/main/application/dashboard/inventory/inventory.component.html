@@ -1,0 +1,662 @@
+<div class="content-wrapper container-xxl p-0">
+  <div class="content-body">
+    <div class="row" *ngIf="isAdmin || isClient">
+      <div class="col-xl-12">
+        <div class="row">
+          <div class="col-lg-12 col-12">
+            <div class="card card-statistics">
+              <div class="card-header">
+                <h4 class="card-title">Inventory</h4>
+              </div>
+              <div class="card-body statistics-body">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6 col-12 mb-2 mb-md-0 mr-0">
+                    <div class="media">
+                      <div class="avatar bg-light-primary mr-2">
+                        <div class="avatar-content">
+                          <i
+                            data-feather="trending-up"
+                            class="feather feather-trending-up avatar-icon"
+                          >
+                          </i>
+                        </div>
+                      </div>
+                      <div class="media-body my-auto">
+                        <p class="card-text font-small-3 mb-0">Sales</p>
+                        <h4 class="mb-0">₱2,300,000</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 mb-2 mb-md-0">
+                    <div class="media">
+                      <div class="avatar bg-light-primary mr-2">
+                        <div class="avatar-content">
+                          <i
+                            data-feather="clipboard"
+                            class="feather feather-clipboard avatar-icon"
+                          >
+                          </i>
+                        </div>
+                      </div>
+                      <div class="media-body my-auto">
+                        <p class="card-text font-small-3 mb-0">Inventory</p>
+                        <h4 class="mb-0">450,000</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 mb-2 mb-md-0">
+                    <div class="media">
+                      <div class="avatar bg-light-primary mr-2">
+                        <div class="avatar-content">
+                          <i
+                            data-feather="box"
+                            class="feather feather-box avatar-icon"
+                          >
+                          </i>
+                        </div>
+                      </div>
+                      <div class="media-body my-auto">
+                        <p class="card-text font-small-3 mb-0">
+                          Stock Available
+                        </p>
+                        <h4 class="mb-0">120,000</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-12 mb-2 mb-md-0">
+                    <div class="media">
+                      <div class="avatar bg-light-primary mr-2">
+                        <div class="avatar-content">
+                          <i
+                            data-feather="user"
+                            class="feather feather-user avatar-icon"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="media-body my-auto">
+                        <p class="card-text font-small-3 mb-0">Customers</p>
+                        <h4 class="mb-0">1,200</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sales by Branches -->
+            <div class="row">
+              <div class="col-lg-5 col-12">
+                <div class="card card-company-table">
+                  <div class="card-header">
+                    <h4 class="card-title">Sales by Branch</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>BRANCHES</th>
+                            <th>SALES</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <div class="font-weight">Pallocan</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <div class="font-weight-bolder">
+                                  72%
+                                  <i
+                                    data-feather="trending-up"
+                                    class="text-danger font-medium-1"
+                                  ></i>
+                                </div>
+                                <div class="font-small-2 text-muted">
+                                  891.4K
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <div class="font-weight">Alangilan</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <div class="font-weight-bolder">
+                                  80%
+                                  <i
+                                    data-feather="trending-up"
+                                    class="text-danger font-medium-1"
+                                  ></i>
+                                </div>
+                                <div class="font-small-2 text-muted">
+                                  891.4K
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <div class="font-weight">Mahabang Parang</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <div class="font-weight-bolder">
+                                  54%
+                                  <i
+                                    data-feather="trending-up"
+                                    class="text-danger font-medium-1"
+                                  ></i>
+                                </div>
+                                <div class="font-small-2 text-muted">
+                                  891.4K
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <div class="font-weight">Balagtas</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <div class="font-weight-bolder">
+                                  92%
+                                  <i
+                                    data-feather="trending-up"
+                                    class="text-danger font-medium-1"
+                                  ></i>
+                                </div>
+                                <div class="font-small-2 text-muted">
+                                  891.4K
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <div class="font-weight">Ibaan</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <div class="font-weight-bolder">
+                                  71%
+                                  <i
+                                    data-feather="trending-up"
+                                    class="text-danger font-medium-1"
+                                  ></i>
+                                </div>
+                                <div class="font-small-2 text-muted">
+                                  891.4K
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <div class="font-weight">San Agustin</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <div class="font-weight-bolder">
+                                  62%
+                                  <i
+                                    data-feather="trending-up"
+                                    class="text-danger font-medium-1"
+                                  ></i>
+                                </div>
+                                <div class="font-small-2 text-muted">
+                                  891.4K
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            <!-- Top 10 Products -->
+              <div class="col-lg-7 col-12">
+                <div class="card card-company-table">
+                  <div class="card-header d-flex justify-content-between align-items-center flex-wrap">
+                    <h4 class="card-title mb-0">Top 10 Product Features</h4>
+                  </div>
+                  <div class="card-body">
+                    <div id="bar-chart" #Spoilagereport>
+                      <apx-chart
+                        [series]="topChartoptions.series"
+                        [chart]="topChartoptions.chart"
+                        [plotOptions]="topChartoptions.plotOptions"
+                        [dataLabels]="topChartoptions.dataLabels"
+                        [yaxis]="topChartoptions.yaxis"
+                        [xaxis]="topChartoptions.xaxis"
+                        [colors]="topChartoptions.colors"
+                      ></apx-chart>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sales of Branch by Category -->
+            <div class="row">
+              <div class="col-lg-5 col-12">
+                <div class="card card-company-table">
+                  <div class="card-header">
+                    <h4 class="card-title">Sales of Branch by Category</h4>
+                  </div>
+                  <div class="card-body">
+                    <div classs="row">
+                      <div class="form-group mb-2">
+                        <label for="categoryBranchSelect">Select Branch</label>
+                        <select id="categoryBranchSelect" class="form-control">
+                          <option [ngValue]=""></option>
+                          <option value="pallocan">Pallocan</option>
+                          <option value="alangilan">Alangilan</option>
+                          <option value="mahabang-parang">
+                            Mahabang Parang
+                          </option>
+                          <option value="balagtas">Balagtas</option>
+                          <option value="ibaan">Ibaan</option>
+                          <option value="san-agustin">San Agustin</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="categoryDateFrom">Date From</label>
+                          <input
+                            type="date"
+                            id="categoryDateFrom"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="categoryDateTo">Date To</label>
+                          <input
+                            type="date"
+                            id="categoryDateTo"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Categories</th>
+                            <th>Sales</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <div class="font-weight">Agri-Products</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <div class="font-weight-bolder">
+                                  72%
+                                  <i
+                                    data-feather="trending-up"
+                                    class="text-danger font-medium-1"
+                                  ></i>
+                                </div>
+                                <div class="font-small-2 text-muted">
+                                  891.4K
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <div class="font-weight">Feeds</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <div class="font-weight-bolder">
+                                  80%
+                                  <i
+                                    data-feather="trending-up"
+                                    class="text-danger font-medium-1"
+                                  ></i>
+                                </div>
+                                <div class="font-small-2 text-muted">
+                                  891.4K
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <div class="font-weight">Grocery</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <div class="font-weight-bolder">
+                                  54%
+                                  <i
+                                    data-feather="trending-up"
+                                    class="text-danger font-medium-1"
+                                  ></i>
+                                </div>
+                                <div class="font-small-2 text-muted">
+                                  891.4K
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <div class="font-weight">Rice</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <div class="font-weight-bolder">
+                                  92%
+                                  <i
+                                    data-feather="trending-up"
+                                    class="text-danger font-medium-1"
+                                  ></i>
+                                </div>
+                                <div class="font-small-2 text-muted">
+                                  891.4K
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <div class="font-weight">Veterinary</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <div class="font-weight-bolder">
+                                  71%
+                                  <i
+                                    data-feather="trending-up"
+                                    class="text-danger font-medium-1"
+                                  ></i>
+                                </div>
+                                <div class="font-small-2 text-muted">
+                                  891.4K
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <div>
+                                  <div class="font-weight">Meat</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div>
+                                <div class="font-weight-bolder">
+                                  62%
+                                  <i
+                                    data-feather="trending-up"
+                                    class="text-danger font-medium-1"
+                                  ></i>
+                                </div>
+                                <div class="font-small-2 text-muted">
+                                  891.4K
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-7 col-12">
+                   <!--  TotalCategory Gained Chart -->
+                  <div class="row">
+                    <div class="col-lg-6 col-12">
+                      <div class="card">
+                        <div class="card-body pb-10" style="height: 219px;">
+                          <h5 class="card-title mb-0">Total Categories</h5>
+                        <div id="radial-bar-chart">
+                          <apx-chart
+                            [series]="totalCategoryChartoptions.series"
+                            [chart]="totalCategoryChartoptions.chart"
+                            [plotOptions]="totalCategoryChartoptions.plotOptions"
+                            [fill]="totalCategoryChartoptions.fill"
+                            [stroke]="totalCategoryChartoptions.stroke"
+                            [labels]="totalCategoryChartoptions.labels"
+                          ></apx-chart>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <!-- TotalProduct Gained Chart Orders -->
+                  <div class="col-lg-6 col-12">
+                    <div class="card">
+                      <div class="card-body pb-10" style="height: 219px;">
+                        <h5 class="card-title mb-0">
+                          Products <span class="subtitle"> out of stock</span>
+                        </h5>
+                        <div id="radial-bar-chart">
+                          <apx-chart
+                            [series]="totalProductChartoptions.series"
+                            [chart]="totalProductChartoptions.chart"
+                            [plotOptions]="totalProductChartoptions.plotOptions"
+                            [fill]="totalProductChartoptions.fill"
+                            [stroke]="totalProductChartoptions.stroke"
+                            [labels]="totalProductChartoptions.labels"
+                          ></apx-chart>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+                  <!-- Spoilage Report Card-->
+                  <div class="card card-spoilage-budget">
+                    <div class="row mx-0">
+                      <div class="col-md-12 col-12 spoilage-report-wrapper">
+                        <div class="d-sm-flex justify-content-between align-items-center">
+                          <h4 class="card-title mb-50 mb-sm-0">
+                            Spoilage Report
+                          </h4>
+                        </div>
+                        <div id="donut-chart" #Spoilagereport>
+                          <apx-chart
+                            _nghost-gpm-c131
+                            [series]="spoilageChartoptions.series"
+                            [chart]="{
+                              type: 'donut',
+                              height: 250,
+                              toolbar: { show: false }
+                            }"
+                            [plotOptions]="spoilageChartoptions.plotOptions"
+                            [colors]="spoilageChartoptions.colors"
+                            [dataLabels]="spoilageChartoptions.dataLabels"
+                            [legend]="spoilageChartoptions.legend"
+                            [labels]="spoilageChartoptions.labels"
+                            [responsive]="spoilageChartoptions.responsive"
+                          ></apx-chart>
+                        </div>
+                      
+                        <div class="custom-legend">
+                          <div 
+                            *ngFor="let label of spoilageChartoptions.labels; let i = index"
+                            class="legend-item">
+                            <span
+                              class="legend-color"
+                              [style.backgroundColor]="spoilageChartoptions.colors[i]">
+                            </span>
+                            <span class="legend-label">{{ label }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div>
+              </div>
+            </div>
+
+             <!-- Spoilage Report by Branch  -->
+             <div class="col-lg-12 col-12">
+              <div class="card cardcompany-table">
+                <div class="card-header">
+                  <h4 class="card-title">Spoilage Report by Branch</h4>
+                </div>
+                <div class="card-body">
+                  <div class="row mb-2">
+                 
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="categoryBranchSelect">Select Branch</label>
+                        <select id="categoryBranchSelect" class="form-control">
+                          <option [ngValue]=""></option>
+                          <option value="pallocan">Pallocan</option>
+                          <option value="alangilan">Alangilan</option>
+                          <option value="mahabang-parang">Mahabang Parang</option>
+                          <option value="balagtas">Balagtas</option>
+                          <option value="ibaan">Ibaan</option>
+                          <option value="san-agustin">San Agustin</option>
+                        </select>
+                      </div>
+                    </div>
+            
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="categoryDateFrom">Date From</label>
+                        <input
+                          type="date"
+                          id="categoryDateFrom"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+               
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label for="categoryDateTo">Date To</label>
+                        <input
+                          type="date"
+                          id="categoryDateTo"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>item Description</th>
+                          <th>item Code</th>
+                          <th>Unit</th>
+                          <th>Quantity</th>
+                          <th>Price</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>BAWANG TAIWAN</td>
+                          <td>FRV000003</td>
+                          <td>KILO</td>
+                          <td>0.16</td>
+                          <td>₱17.96</td>
+                        </tr>
+                        <tr>
+                          <td>ONION RED</td>
+                          <td>FRV000016</td>
+                          <td>KILO</td>
+                          <td>1.66</td>
+                          <td>₱207.77</td>
+                        </tr>
+                        <tr>
+                          <td>EGG MEDIUM</td>
+                          <td>GRO002962</td>
+                          <td>PCS</td>
+                          <td>54</td>
+                          <td>₱378.54</td>
+                        </tr>
+                        <tr>
+                          <td>PATATAS</td>
+                          <td>FRV000035</td>
+                          <td>KILO</td>
+                          <td>0.19</td>
+                          <td>₱19.71</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+              <!-- Transactions Card -->
+          </div>
+        </div>
+        <div class="row match-height" *ngIf="isAdmin"></div>
+      </div>
+    </div>
+  </div>
+</div>

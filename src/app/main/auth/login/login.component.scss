@@ -1,0 +1,229 @@
+@import '@core/scss/base/bootstrap-extended/include'; // Bootstrap includes
+@import '@core/scss/base/pages/page-auth.scss';
+@import '@core/scss/angular/libs/toastr.component.scss';
+
+body {
+    background-color: #CFD1D6;
+}
+// .content.app-content {
+//     padding: 0 !important;
+// }
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url(../../../../assets/images/pages/login/bg2.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.login-container .backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #685b5b8c;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
+}
+
+.login-content__container {
+    display: flex;
+    width: 80%;
+    height: 600px;
+
+    border-radius: 50px;
+    background: #CFD1D6;
+    box-shadow: 9px 9px 18px #25262736, -9px -9px 18px #17171833;
+     transition: transform 250ms ease-in-out;
+
+     overflow: hidden;
+}
+
+.login-content__container:hover {
+    transform: scale(1.005);
+    transition: transform 350ms ease-in-out;
+}
+
+.ilustration-wrapper {
+    position: relative;
+    width: 60%;
+    background: rgb(3, 75, 32);
+    background: linear-gradient(156deg, rgba(3, 75, 32, 1) 0%, rgba(4, 250, 148, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ilustration-wrapper .ilustrations {
+    width: clamp(250px, 30vw, 750px);
+}
+
+.auth-wrapper {
+    background: #fff;
+    width: 40%;
+    flex-basis: auto;
+    min-height: auto;
+}
+
+.auth-wrapper.auth-v1{
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay-image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    object-fit: none;
+    transform: scaleX(2);
+}
+
+.analytics-title {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: aqua;
+    font-size: 16px;
+}
+
+.analytics-title h2 {
+    font-size: 27px;
+    font-weight: 800;
+    margin: 0;
+    color: #55aa55;
+}
+
+.login-text {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.page>* {
+	animation: slide-up .75s forwards, fade-in .5s forwards;
+}
+
+// .app-content {
+//     overflow: overlay;
+//     overflow-x: hidden;
+//     padding: 0 !important;
+//     transition: none;
+// }
+
+.header-navbar-shadow {
+    display: none;
+}
+
+.login-logo {
+    display: none !important;
+}
+
+@media (max-width: 992px){
+    .ilustration-wrapper{
+        width: 50%;
+    }
+    .auth-wrapper{
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px){
+    .ilustration-wrapper{
+       display: none;
+    }
+    .auth-wrapper{
+        width: 100%;
+    }
+    .login-content__container {
+        border-radius: 10px;
+    }
+    .login-logo {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 0;
+    }
+    .login-content__container{
+        width: 90%;
+    }
+}
+
+
+
+/**Scrollbar css*/
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: gray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(180, 1%, 26%);
+    ;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+/**Keyframes*/
+
+@keyframes slide-up {
+	0% {
+		transform: translateY(100%);
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+
+@keyframes pulse-light {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.75);
+    }
+
+    70% {
+        box-shadow: 0 0 0 16px rgba(52, 172, 224, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+    }
+}
+
+@keyframes pulse-dark {
+    0% {
+        box-shadow: 0 0 0 0 hsla(0, 0%, 13%, 0.75);
+    }
+
+    70% {
+        box-shadow: 0 0 0 16px rgba(52, 172, 224, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+    }
+}

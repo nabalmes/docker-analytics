@@ -1,0 +1,81 @@
+@import '@core/scss/base/plugins/charts/chart-apex.scss';
+@import '@core/scss/angular/libs/toastr.component.scss';
+
+
+.custom-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+  }
+  
+  .legend-color {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .legend-label {
+    font-size: 14px;
+    color: #333; /* Adjust the color as needed */
+  }
+
+  .card-spoilage-budget {
+    .spoilage-report-wrapper {
+      padding: 1.5rem 1.5rem;
+      height: 400px;
+
+      @include media-breakpoint-up(md) {
+        border-right: 1px solid $border-color;
+      }
+  
+      #spoilage-report-chart {
+        .apexcharts-series {
+          &[seriesName='Earning'] {
+            transform: scaleY(0.965);
+          }
+          &[seriesName='Expense'] {
+            transform: scaleY(1.035);
+          }
+        }
+      }
+    }
+  }
+  
+
+
+  .feather-box {
+    color: rgb(225, 86, 86);
+  }
+
+  .feather-user {
+    color: rgb(77, 151, 211);
+  }
+
+  .feather-trending-up {
+    color: rgb(255, 155, 83);
+  }
+
+  .feather-clipboard {
+    color: rgb(34, 107, 49);
+  }
+
+
+  #SvgjsPath1735{
+    background-color: #0a5c25;
+}
+
+.card-title .subtitle {
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #888; /* Customize color as needed */
+  }

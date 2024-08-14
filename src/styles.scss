@@ -1,0 +1,36 @@
+@import '@core/scss/core.scss';
+@import './assets/scss/styles';
+@import './assets/scss/loader/loader';
+
+html body {
+    background-color: #30742727;
+    background: url(assets/images/pages/bg.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+//scrollbar
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(48, 96, 65);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 0%, 100%);
+    ;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.auth-wrapper.auth-v1 .auth-inner:before {
+    pointer-events: none !important;
+}
